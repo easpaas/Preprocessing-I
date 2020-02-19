@@ -137,7 +137,11 @@ header {
 			text-decoration: none;
 			font-family: @heading-font;
 			color:black;
-		} // this closes a
+			&:hover {
+				background-color:white;
+				color:slategray;
+			}
+		} // this closes anchor
 	 } // this closes nav
 	
 	.contact {
@@ -170,6 +174,25 @@ header {
  * 		Intro. styles
  * *********************
  */
+
+.introduction {
+	width: 100%;
+	margin: 5% 0;
+	padding: 2%;
+
+	h2 {
+		width:23%;
+		font-size:1.5rem;
+		margin: 2%;
+		padding-bottom: 1%;
+		.bottom-border();
+	} // this closes h2
+
+	p {
+		text-align: center;
+	} // this closes paragraph
+
+} // this closes introduction
 
 
 

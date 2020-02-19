@@ -209,6 +209,10 @@ header nav a {
   font-family: 'Roboto Mono', monospace;
   color: black;
 }
+header nav a:hover {
+  background-color: white;
+  color: slategray;
+}
 header .contact {
   text-align: center;
   margin-top: 5%;
@@ -234,6 +238,21 @@ header .profile-img img {
  * 		Intro. styles
  * *********************
  */
+.introduction {
+  width: 100%;
+  margin: 5% 0;
+  padding: 2%;
+}
+.introduction h2 {
+  width: 23%;
+  font-size: 1.5rem;
+  margin: 2%;
+  padding-bottom: 1%;
+  border-bottom: 1px dashed black;
+}
+.introduction p {
+  text-align: center;
+}
 /* 
  * ********************* 
  * 		Skills styles
