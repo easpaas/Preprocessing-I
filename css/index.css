@@ -158,6 +158,10 @@ body {
 .bottom-border {
   border-bottom: 1px dashed black;
 }
+.section-headings {
+  font-size: 1.5rem;
+  padding: 2% 0;
+}
 /* 
  * ********************* 
  * 		General styles
@@ -245,9 +249,9 @@ header .profile-img img {
 }
 .introduction h2 {
   width: 23%;
-  font-size: 1.5rem;
   margin: 2%;
-  padding-bottom: 1%;
+  font-size: 1.5rem;
+  padding: 2% 0;
   border-bottom: 1px dashed black;
 }
 .introduction p {
@@ -258,6 +262,27 @@ header .profile-img img {
  * 		Skills styles
  * *********************
  */
+.skills {
+  background-color: slategray;
+  width: 50%;
+  margin: 0 auto;
+}
+.skills h2 {
+  font-size: 1.5rem;
+  padding: 2% 0;
+  border-bottom: 1px dashed black;
+  text-align: center;
+}
+.skills ul {
+  width: 90%;
+  margin: 0 auto;
+  padding: 2%;
+}
+.skills li {
+  list-style: circle;
+  list-style-position: inside;
+  margin: 3% 0;
+}
 /* 
  * ************************  
  * 		Work history styles

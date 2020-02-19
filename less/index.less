@@ -66,8 +66,8 @@ html, body {
 
 	@main-font: 'Lato', sans-serif;
 	@heading-font:'Roboto Mono', monospace;
-// @main-color:
-// @background-color:
+	// @main-color: slategray;
+	@background-color: slategray;
 
 
 /* 
@@ -90,6 +90,11 @@ html, body {
 	.bottom-border {
 		border-bottom: 1px dashed black;
 	}
+	.section-headings {
+		font-size: 1.5rem;
+		padding: 2% 0;
+	}
+	
 
 
 /* 
@@ -112,6 +117,7 @@ html, body {
 	p, li {
 		font-family: @main-font;
 	}
+
 
 /* 
  * ********************* 
@@ -169,6 +175,7 @@ header {
 	
 } // this closes header 
 
+
 /* 
  * ********************* 
  * 		Intro. styles
@@ -182,9 +189,8 @@ header {
 
 	h2 {
 		width:23%;
-		font-size:1.5rem;
 		margin: 2%;
-		padding-bottom: 1%;
+		.section-headings();
 		.bottom-border();
 	} // this closes h2
 
@@ -195,13 +201,37 @@ header {
 } // this closes introduction
 
 
-
 /* 
  * ********************* 
  * 		Skills styles
  * *********************
  */
+.skills {
+	background-color: @background-color;
+	width: 50%;
+	margin:0 auto;
 
+	h2 { 
+		// width: 70%;
+		.section-headings();
+		.bottom-border();
+		// margin-bottom: 5%;
+		text-align: center;
+	} // this closes h2
+
+	ul {
+		width: 90%;
+		margin: 0 auto;
+		padding:2%;
+	} // this closes ul 
+
+	li {
+		list-style: circle;
+		list-style-position: inside;
+		margin: 3% 0;
+	} // this closes li 
+
+} // this closes skills 
 
 
 /* 
