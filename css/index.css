@@ -134,3 +134,118 @@ html,
 body {
   height: 100%;
 }
+/* 
+ * ********************* 
+ * 		Variables
+ * *********************
+ */
+/* 
+ * ********************* 
+ * 		Mixins
+ * *********************
+ */
+.flex {
+  display: flex;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.box-border {
+  border: 1px solid black;
+}
+.bottom-border {
+  border-bottom: 1px dashed black;
+}
+/* 
+ * ********************* 
+ * 		General styles
+ * *********************
+ */
+.container {
+  width: 800px;
+  margin: 0 auto;
+  background-color: lightgray;
+}
+body {
+  background-color: black;
+}
+h1,
+h2,
+h3,
+h4,
+h5 h6 {
+  font-family: 'Roboto Mono', monospace;
+}
+p,
+li {
+  font-family: 'Lato', sans-serif;
+}
+/* 
+ * ********************* 
+ * 		Header styles
+ * *********************
+ */
+header {
+  border: 1px solid black;
+  padding: 5%;
+  height: 40vh;
+  display: flex;
+}
+header .main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+header nav a {
+  text-decoration: none;
+  font-family: 'Roboto Mono', monospace;
+  color: black;
+}
+header .contact {
+  text-align: center;
+  margin-top: 5%;
+}
+header .contact h1 {
+  font-size: 1.5rem;
+}
+header .contact p {
+  margin-top: 2%;
+}
+header .profile-img {
+  width: 32%;
+  height: 20vh;
+  transform: rotate(90deg);
+  padding: 1%;
+}
+header .profile-img img {
+  width: 100%;
+  border-radius: 5rem;
+}
+/* 
+ * ********************* 
+ * 		Intro. styles
+ * *********************
+ */
+/* 
+ * ********************* 
+ * 		Skills styles
+ * *********************
+ */
+/* 
+ * ************************  
+ * 		Work history styles
+ * ************************
+ */
+/* 
+ * ********************* 
+ * 		Footer styles
+ * *********************
+ */

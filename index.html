@@ -7,6 +7,8 @@
   <title>My Resume</title>
 
   <link rel="stylesheet" href="css/index.css">
+  <!-- Google fonts  -->
+  <link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Mono&display=swap" rel="stylesheet">
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -14,79 +16,85 @@
 </head>
 
 <body>
-  <header>
-    <!-- Div container used to resize image -->
-    <div class="profile-img">
-        <img src="images/LinkedInProfile2.jpg" alt="profile picture of self">
-    </div>
-    <div class="main-contact">
-      <h1>Evan Aspaas</h1>
+  <div class="container">
+
+    <header>
+      <div class="main">
+        <!-- Div container used to resize image -->
+        <div class="profile-img">
+            <img src="images/LinkedInProfile2.jpg" alt="profile picture of self">
+        </div>
+        <div class="contact">
+          <h1>Evan Aspaas</h1>
+          <p>My email</p>
+          <p>My phone</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Github</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Portfolio</a>
+      </nav>
+    </header>
+
+    <!-- Introduction section -->
+    <section class="container">
+      <h2>Introduction</h2>
+      <p>Hello, my name is Evan Aspaas. I am a Junior Developer seeking to solve real world problems through the advancements in Technology.</p>
+    </section>
+
+    <!-- Skills section -->
+    <section class="container">
+      <h2>Things I am good at</h2>
+      <ul>
+        <li>Creating websites from scratch with modern tech stacks</li>
+        <li>Making the web more accessible to everyone, one webpage at a time</li>
+        <li>Collaborating with others</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Using preprocessors (Less)</li>
+        <li>JavaScript</li>
+        <li>Object Oriented Programming (Java)</li>
+        <li>React</li>
+      </ul>
+    </section>
+
+    <!-- Work history section -->
+    <section class="container">
+      <h2>Work History</h2>
+      <div>
+        <h4>Catalyte</h4>
+        <p>Junior Developer</p>
+        <p>9 months</p>
+      </div>
+    </section>
+
+    <!-- Education history section -->
+    <section class="container">
+        <h2>Education</h2>
+        <div>
+            <h4>Charter College</h4>
+            <p>Certificate of Drafting</p>
+          </div>
+        <div>
+          <h4>Clark College</h4>
+          <p>Associates in Science</p>
+        </div>
+        <div>
+            <h4>Portland State University</h4>
+            <p>Bachelors of Mathmatics</p>
+            <p>In progress...</p>
+          </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
       <p>My email</p>
       <p>My phone</p>
-    </div>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Github</a>
-      <a href="#">LinkedIn</a>
-      <a href="#">Portfolio</a>
-    </nav>
-  </header>
+    </footer>
 
-  <!-- Introduction section -->
-  <section class="container">
-    <h2>Introduction</h2>
-    <p>Hello, my name is Evan Aspaas. I am a Junior Developer seeking to solve real world problems through the advancements in Technology.</p>
-  </section>
-
-  <!-- Skills section -->
-  <section class="container">
-    <h2>Things I am good at</h2>
-    <ul>
-      <li>Creating websites from scratch with modern tech stacks</li>
-      <li>Making the web more accessible to everyone, one webpage at a time</li>
-      <li>Collaborating with others</li>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>Using preprocessors (Less)</li>
-      <li>JavaScript</li>
-      <li>Object Oriented Programming (Java)</li>
-      <li>React</li>
-    </ul>
-  </section>
-
-  <!-- Work history section -->
-  <section class="container">
-    <h2>Work History</h2>
-    <div>
-      <h4>Catalyte</h4>
-      <p>Junior Developer</p>
-      <p>9 months</p>
-    </div>
-  </section>
-
-  <!-- Education history section -->
-  <section class="container">
-      <h2>Education</h2>
-      <div>
-          <h4>Charter College</h4>
-          <p>Certificate of Drafting</p>
-        </div>
-      <div>
-        <h4>Clark College</h4>
-        <p>Associates in Science</p>
-      </div>
-      <div>
-          <h4>Portland State University</h4>
-          <p>Bachelors of Mathmatics</p>
-          <p>In progress...</p>
-        </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>My email</p>
-    <p>My phone</p>
-  </footer>
-
+  </div>
 </body>
+
 </html>
