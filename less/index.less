@@ -128,7 +128,7 @@ header {
 	@media(max-width:500px) {
 		background-color: @main-color;
 		padding: 2%;
-		height:60vh;
+		height:65vh;
 		.flex-column();
 	} // this closes media query
 
@@ -169,6 +169,12 @@ header {
 				background-color:white;
 				color:slategray;
 			} // this closes anchor hover
+
+			@media (max-width: 500px) {
+				.box-border();
+				font-size: 1.5rem;
+				padding: 2%;
+			} // this closes media query
 		} // this closes anchor
 	 } // this closes nav
 	
@@ -189,7 +195,7 @@ header {
 
 			@media(max-width: 500px) {
 				margin: 4% 20%;
-				font-size:1rem;
+				font-size:1.5rem;
 			} // this closes media query
 		} // this closes paragraph
 
@@ -232,10 +238,18 @@ header {
 		margin: 2%;
 		.section-headings();
 		.bottom-border();
+
+		@media (max-width: 500px) {
+			font-size: 2rem;
+		} // this closes media query
 	} // this closes h2
 
 	p {
 		text-align: center;
+
+		@media (max-width: 500px) {
+			font-size: 1.5rem;
+		} // this closes media query
 	} // this closes paragraph
 } // this closes introduction
 
@@ -255,6 +269,10 @@ header {
 		.section-headings();
 		.bottom-border();
 		text-align: center;
+
+		@media(max-width: 500px) {
+				font-size: 2rem;
+		} // this closes media query
 	} // this closes h2
 
 	ul {
@@ -267,6 +285,10 @@ header {
 		list-style: circle;
 		list-style-position: inside;
 		margin: 3% 0;
+
+		@media (max-width: 500px) {
+			font-size: 1.5rem;
+		} // this closes media query
 	} // this closes li 
 } // this closes skills 
 
@@ -285,6 +307,10 @@ header {
 		margin: 3% 0;
 		.section-headings();
 		.bottom-border();
+
+		@media(max-width: 500px) {
+			font-size: 2rem;
+		} // this closes media query
 	} // this closes h2
 
 	.work-titles {
@@ -292,18 +318,26 @@ header {
 		justify-content: space-around;
 		margin-bottom: 3%;
 	
-		h3 {
-			.bottom-border();
-		} // this closes h3
+		@media(max-width: 500px) {
+			padding-bottom: 1%;
+		} // this closes media query
 
 		p {
 			.bottom-border();
+
+			@media(max-width: 500px) {
+				font-size: 1.5rem;
+			} // this closes media query
 		} // this closes paragraph
 	} // this closes work-titles
 
 	.work-container {
 		.flex();
 		justify-content: space-around;
+
+		@media(max-width: 500px) {
+			font-size: 1.5rem;
+		} // this closes media query
 	} // this closes work-container
 } // this closes work-history
 
@@ -321,6 +355,10 @@ header {
 	h2 {
 		.section-headings();
 		.bottom-border();
+
+		@media(max-width: 500px) {
+			font-size: 2rem;
+		} // this closes media query
 	} // this closes h2
 
 	.ed-container {
@@ -328,11 +366,27 @@ header {
 		justify-content: space-between;
 		margin: 5% 0;
 
+		@media(max-width: 500px) {
+			.flex-column();
+		} // this closes media query
+
 		.school-info {
 			text-align: center;
 
+			h3 {
+				text-transform: uppercase;
+
+				@media(max-width: 500px) {
+					font-size: 1.5rem;
+				} // this closes media query
+			} // this closes h3
+
 			p {
 				margin: 5% 0;
+
+				@media (max-width: 500px) {
+					font-size: 1.5rem;
+				} // this closes media query
 			} // this closes paragraph
 		} // this closes school-info
 	} // this closes ed-container
@@ -351,4 +405,8 @@ footer {
 	background-color: darkslategray;
 	justify-content: space-around;
 	padding: 2%;
+
+	@media (max-width: 500px) {
+		font-size: 1.5rem;
+	} // this closes media query
 } // this closes footer
