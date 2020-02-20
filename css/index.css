@@ -197,11 +197,27 @@ header {
   height: 40vh;
   display: flex;
 }
+@media (max-width: 500px) {
+  header {
+    background-color: darkslategray;
+    padding: 2%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
 header .main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 500px) {
+  header .main {
+    display: flex;
+    flex-direction: row;
+  }
 }
 header nav {
   display: flex;
@@ -210,6 +226,14 @@ header nav {
   background-color: darkslategray;
   text-align: center;
   padding: 2%;
+}
+@media (max-width: 500px) {
+  header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5%;
+  }
 }
 header nav a {
   text-decoration: none;
@@ -227,14 +251,36 @@ header .contact {
 header .contact h1 {
   font-size: 1.5rem;
 }
+@media (max-width: 500px) {
+  header .contact h1 {
+    font-size: 3rem;
+  }
+}
 header .contact p {
   margin-top: 2%;
+}
+@media (max-width: 500px) {
+  header .contact p {
+    margin: 4% 20%;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  header .contact {
+    width: 60%;
+  }
 }
 header .profile-img {
   width: 32%;
   height: 20vh;
   transform: rotate(90deg);
   padding: 1%;
+}
+@media (max-width: 500px) {
+  header .profile-img {
+    width: 43%;
+    height: 43vh;
+  }
 }
 header .profile-img img {
   width: 100%;

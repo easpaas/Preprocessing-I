@@ -125,6 +125,13 @@ html, body {
  */
 
 header {
+	@media(max-width:500px) {
+		background-color: @main-color;
+		padding: 2%;
+		height:60vh;
+		.flex-column();
+	} // this closes media query
+
 	.box-border();
 	padding: 5%;
 	height: 40vh;
@@ -133,13 +140,25 @@ header {
 	.main {
 		.flex-column();
 		align-items: center;
-	} //this closes main 
+
+		@media(max-width: 500px) {
+			.flex();
+			flex-direction: row;
+		} // this closes media query
+	} // this closes main 
 
 	nav {
 		.flex-column();
 		background-color: darkslategray;
 		text-align: center;
 		padding: 2%;
+
+		@media(max-width: 500px) {
+			.flex();
+			flex-direction: row;
+			justify-content: space-around;
+			margin-top: 5%;
+		} // this closes media query
 
 		a {
 			text-decoration: none;
@@ -156,14 +175,27 @@ header {
 	.contact {
 		text-align: center;
 		margin-top: 5%;
-		
+
 		h1 {
-			font-size:1.5rem;
+			font-size: 1.5rem;
+			
+			@media(max-width: 500px){
+				font-size: 3rem;
+			} // this closes media query
 		} // this closes h1
 
 		p {
-			margin-top:2%;
+			margin-top: 2%;
+
+			@media(max-width: 500px) {
+				margin: 4% 20%;
+				font-size:1rem;
+			} // this closes media query
 		} // this closes paragraph
+
+		@media(max-width: 500px) {
+			width: 60%;
+		} // this closes media query 
 	} // this closes contact
 
 	.profile-img {
@@ -171,6 +203,11 @@ header {
 		height: 20vh;
 		transform: rotate(90deg);
 		padding: 1%;
+
+		@media(max-width: 500px) {
+			width: 43%;
+			height: 43vh;
+		} // this closes media query
 
 		img {
 			width: 100%;
@@ -200,7 +237,6 @@ header {
 	p {
 		text-align: center;
 	} // this closes paragraph
-
 } // this closes introduction
 
 
