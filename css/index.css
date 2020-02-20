@@ -207,6 +207,9 @@ header nav {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: darkslategray;
+  text-align: center;
+  padding: 2%;
 }
 header nav a {
   text-decoration: none;
@@ -248,7 +251,6 @@ header .profile-img img {
   padding: 2%;
 }
 .introduction h2 {
-  width: 23%;
   margin: 2%;
   font-size: 1.5rem;
   padding: 2% 0;
@@ -288,8 +290,65 @@ header .profile-img img {
  * 		Work history styles
  * ************************
  */
+.work-history {
+  width: 100%;
+  padding: 4%;
+}
+.work-history h2 {
+  margin: 3% 0;
+  font-size: 1.5rem;
+  padding: 2% 0;
+  border-bottom: 1px dashed black;
+}
+.work-history .work-titles {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 3%;
+}
+.work-history .work-titles h3 {
+  border-bottom: 1px dashed black;
+}
+.work-history .work-titles p {
+  border-bottom: 1px dashed black;
+}
+.work-history .work-container {
+  display: flex;
+  justify-content: space-around;
+}
+/* 
+ * ************************  
+ * 		Education styles
+ * ************************
+ */
+.education {
+  width: 100%;
+  padding: 4%;
+}
+.education h2 {
+  font-size: 1.5rem;
+  padding: 2% 0;
+  border-bottom: 1px dashed black;
+}
+.education .ed-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 5% 0;
+}
+.education .ed-container .school-info {
+  text-align: center;
+}
+.education .ed-container .school-info p {
+  margin: 5% 0;
+}
 /* 
  * ********************* 
  * 		Footer styles
  * *********************
  */
+footer {
+  display: flex;
+  border: 1px solid black;
+  background-color: darkslategray;
+  justify-content: space-around;
+  padding: 2%;
+}

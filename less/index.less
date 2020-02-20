@@ -66,7 +66,7 @@ html, body {
 
 	@main-font: 'Lato', sans-serif;
 	@heading-font:'Roboto Mono', monospace;
-	// @main-color: slategray;
+	@main-color: darkslategray;
 	@background-color: slategray;
 
 
@@ -94,7 +94,6 @@ html, body {
 		font-size: 1.5rem;
 		padding: 2% 0;
 	}
-	
 
 
 /* 
@@ -134,19 +133,23 @@ header {
 	.main {
 		.flex-column();
 		align-items: center;
-	 } //this closes main 
+	} //this closes main 
 
-		nav {
+	nav {
 		.flex-column();
+		background-color: darkslategray;
+		text-align: center;
+		padding: 2%;
 
 		a {
 			text-decoration: none;
 			font-family: @heading-font;
 			color:black;
+			
 			&:hover {
 				background-color:white;
 				color:slategray;
-			}
+			} // this closes anchor hover
 		} // this closes anchor
 	 } // this closes nav
 	
@@ -156,10 +159,11 @@ header {
 		
 		h1 {
 			font-size:1.5rem;
-		}
+		} // this closes h1
+
 		p {
 			margin-top:2%;
-		}
+		} // this closes paragraph
 	} // this closes contact
 
 	.profile-img {
@@ -167,12 +171,12 @@ header {
 		height: 20vh;
 		transform: rotate(90deg);
 		padding: 1%;
+
 		img {
 			width: 100%;
 			border-radius: 5rem;
 		} // this closes img 
 	} // this closes profile-img
-	
 } // this closes header 
 
 
@@ -188,7 +192,6 @@ header {
 	padding: 2%;
 
 	h2 {
-		width:23%;
 		margin: 2%;
 		.section-headings();
 		.bottom-border();
@@ -206,16 +209,15 @@ header {
  * 		Skills styles
  * *********************
  */
+
 .skills {
 	background-color: @background-color;
 	width: 50%;
 	margin:0 auto;
 
 	h2 { 
-		// width: 70%;
 		.section-headings();
 		.bottom-border();
-		// margin-bottom: 5%;
 		text-align: center;
 	} // this closes h2
 
@@ -230,7 +232,6 @@ header {
 		list-style-position: inside;
 		margin: 3% 0;
 	} // this closes li 
-
 } // this closes skills 
 
 
@@ -240,7 +241,66 @@ header {
  * ************************
  */
 
+.work-history {
+	width: 100%;
+	padding: 4%;
 
+	h2 {
+		margin: 3% 0;
+		.section-headings();
+		.bottom-border();
+	} // this closes h2
+
+	.work-titles {
+		.flex();
+		justify-content: space-around;
+		margin-bottom: 3%;
+	
+		h3 {
+			.bottom-border();
+		} // this closes h3
+
+		p {
+			.bottom-border();
+		} // this closes paragraph
+	} // this closes work-titles
+
+	.work-container {
+		.flex();
+		justify-content: space-around;
+	} // this closes work-container
+} // this closes work-history
+
+
+/* 
+ * ************************  
+ * 		Education styles
+ * ************************
+ */
+
+.education {
+	width:100%;
+	padding:4%;
+
+	h2 {
+		.section-headings();
+		.bottom-border();
+	} // this closes h2
+
+	.ed-container {
+		.flex();
+		justify-content: space-between;
+		margin: 5% 0;
+
+		.school-info {
+			text-align: center;
+
+			p {
+				margin: 5% 0;
+			} // this closes paragraph
+		} // this closes school-info
+	} // this closes ed-container
+} // this closes education
 
 
 /* 
@@ -248,3 +308,11 @@ header {
  * 		Footer styles
  * *********************
  */
+
+footer {
+	.flex();
+	.box-border();
+	background-color: darkslategray;
+	justify-content: space-around;
+	padding: 2%;
+} // this closes footer
