@@ -57,3 +57,356 @@ html, body {
     height: 100%;
 }
 
+
+/* 
+ * ********************* 
+ * 		Variables
+ * *********************
+ */
+
+	@main-font: 'Lato', sans-serif;
+	@heading-font:'Roboto Mono', monospace;
+	@main-color: darkslategray;
+	@background-color: slategray;
+
+
+/* 
+ * ********************* 
+ * 		Mixins
+ * *********************
+ */
+
+	.flex {
+		display: flex;
+	}
+	.flex-column {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.box-border {
+		border: 1px solid black;
+	}
+	.bottom-border {
+		border-bottom: 1px dashed black;
+	}
+	.section-headings {
+		font-size: 1.5rem;
+		padding: 2% 0;
+	}
+
+
+/* 
+ * ********************* 
+ * 		General styles
+ * *********************
+ */
+
+	.container {
+		width:800px;
+		margin:0 auto;
+		background-color:lightgray;
+	}
+	body {
+		background-color:black;
+	}
+	h1, h2, h3, h4, h5 h6 {
+		font-family: @heading-font;
+	}
+	p, li {
+		font-family: @main-font;
+	}
+
+
+/* 
+ * ********************* 
+ * 		Header styles
+ * *********************
+ */
+
+header {
+	@media(max-width:500px) {
+		background-color: @main-color;
+		padding: 2%;
+		height:65vh;
+		.flex-column();
+	} // this closes media query
+
+	.box-border();
+	padding: 5%;
+	height: 40vh;
+	.flex();
+
+	.main {
+		.flex-column();
+		align-items: center;
+
+		@media(max-width: 500px) {
+			.flex();
+			flex-direction: row;
+		} // this closes media query
+	} // this closes main 
+
+	nav {
+		.flex-column();
+		background-color: darkslategray;
+		text-align: center;
+		padding: 2%;
+
+		@media(max-width: 500px) {
+			.flex();
+			flex-direction: row;
+			justify-content: space-around;
+			margin-top: 5%;
+		} // this closes media query
+
+		a {
+			text-decoration: none;
+			font-family: @heading-font;
+			color:black;
+			
+			&:hover {
+				background-color:white;
+				color:slategray;
+			} // this closes anchor hover
+
+			@media (max-width: 500px) {
+				.box-border();
+				font-size: 1.5rem;
+				padding: 2%;
+			} // this closes media query
+		} // this closes anchor
+	 } // this closes nav
+	
+	.contact {
+		text-align: center;
+		margin-top: 5%;
+
+		h1 {
+			font-size: 1.5rem;
+			
+			@media(max-width: 500px){
+				font-size: 3rem;
+			} // this closes media query
+		} // this closes h1
+
+		p {
+			margin-top: 2%;
+
+			@media(max-width: 500px) {
+				margin: 4% 20%;
+				font-size:1.5rem;
+			} // this closes media query
+		} // this closes paragraph
+
+		@media(max-width: 500px) {
+			width: 60%;
+		} // this closes media query 
+	} // this closes contact
+
+	.profile-img {
+		width: 32%;
+		height: 20vh;
+		transform: rotate(90deg);
+		padding: 1%;
+
+		@media(max-width: 500px) {
+			width: 43%;
+			height: 43vh;
+		} // this closes media query
+
+		img {
+			width: 100%;
+			border-radius: 5rem;
+		} // this closes img 
+	} // this closes profile-img
+} // this closes header 
+
+
+/* 
+ * ********************* 
+ * 		Intro. styles
+ * *********************
+ */
+
+.introduction {
+	width: 100%;
+	margin: 5% 0;
+	padding: 2%;
+
+	h2 {
+		margin: 2%;
+		.section-headings();
+		.bottom-border();
+
+		@media (max-width: 500px) {
+			font-size: 2rem;
+		} // this closes media query
+	} // this closes h2
+
+	p {
+		text-align: center;
+
+		@media (max-width: 500px) {
+			font-size: 1.5rem;
+		} // this closes media query
+	} // this closes paragraph
+} // this closes introduction
+
+
+/* 
+ * ********************* 
+ * 		Skills styles
+ * *********************
+ */
+
+.skills {
+	background-color: @background-color;
+	width: 50%;
+	margin:0 auto;
+
+	h2 { 
+		.section-headings();
+		.bottom-border();
+		text-align: center;
+
+		@media(max-width: 500px) {
+				font-size: 2rem;
+		} // this closes media query
+	} // this closes h2
+
+	ul {
+		width: 90%;
+		margin: 0 auto;
+		padding:2%;
+	} // this closes ul 
+
+	li {
+		list-style: circle;
+		list-style-position: inside;
+		margin: 3% 0;
+
+		@media (max-width: 500px) {
+			font-size: 1.5rem;
+		} // this closes media query
+	} // this closes li 
+} // this closes skills 
+
+
+/* 
+ * ************************  
+ * 		Work history styles
+ * ************************
+ */
+
+.work-history {
+	width: 100%;
+	padding: 4%;
+
+	h2 {
+		margin: 3% 0;
+		.section-headings();
+		.bottom-border();
+
+		@media(max-width: 500px) {
+			font-size: 2rem;
+		} // this closes media query
+	} // this closes h2
+
+	.work-titles {
+		.flex();
+		justify-content: space-around;
+		margin-bottom: 3%;
+	
+		@media(max-width: 500px) {
+			padding-bottom: 1%;
+		} // this closes media query
+
+		p {
+			.bottom-border();
+
+			@media(max-width: 500px) {
+				font-size: 1.5rem;
+			} // this closes media query
+		} // this closes paragraph
+	} // this closes work-titles
+
+	.work-container {
+		.flex();
+		justify-content: space-around;
+
+		@media(max-width: 500px) {
+			font-size: 1.5rem;
+		} // this closes media query
+	} // this closes work-container
+} // this closes work-history
+
+
+/* 
+ * ************************  
+ * 		Education styles
+ * ************************
+ */
+
+.education {
+	width:100%;
+	padding:4%;
+
+	h2 {
+		.section-headings();
+		.bottom-border();
+
+		@media(max-width: 500px) {
+			font-size: 2rem;
+		} // this closes media query
+	} // this closes h2
+
+	.ed-container {
+		.flex();
+		justify-content: space-between;
+		margin: 5% 0;
+
+		@media(max-width: 500px) {
+			.flex-column();
+		} // this closes media query
+
+		.school-info {
+			text-align: center;
+
+			h3 {
+				text-transform: uppercase;
+
+				@media(max-width: 500px) {
+					font-size: 1.5rem;
+				} // this closes media query
+			} // this closes h3
+
+			p {
+				margin: 5% 0;
+
+				@media (max-width: 500px) {
+					font-size: 1.5rem;
+				} // this closes media query
+			} // this closes paragraph
+		} // this closes school-info
+	} // this closes ed-container
+} // this closes education
+
+
+/* 
+ * ********************* 
+ * 		Footer styles
+ * *********************
+ */
+
+footer {
+	.flex();
+	.box-border();
+	background-color: darkslategray;
+	justify-content: space-around;
+	padding: 2%;
+
+	@media (max-width: 500px) {
+		font-size: 1.5rem;
+	} // this closes media query
+} // this closes footer

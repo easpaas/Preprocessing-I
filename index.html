@@ -7,13 +7,102 @@
   <title>My Resume</title>
 
   <link rel="stylesheet" href="css/index.css">
-
-  <!--[if lt IE 9]>
+  <!-- Google fonts  -->
+  <link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Mono&display=swap" rel="stylesheet">
+ <!-- Responsive viewport -->
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <div class="container">
+
+    <header>
+      <div class="main">
+        <!-- Div container used to resize image -->
+        <div class="profile-img">
+            <img src="images/LinkedInProfile2.jpg" alt="profile picture of self">
+        </div>
+        <div class="contact">
+          <h1>Evan Aspaas</h1>
+          <p>My email</p>
+          <p>My phone</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Github</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Portfolio</a>
+      </nav>
+    </header>
+
+    <!-- Introduction section -->
+    <section class="introduction">
+      <h2>Introduction</h2>
+      <p>Hello, my name is Evan Aspaas. I am a Web Developer seeking to solve real world problems through the advancements in Technology.</p>
+    </section>
+
+    <!-- Skills section -->
+    <section class="skills">
+      <h2>Things I am good at</h2>
+      <ul>
+        <li>Creating websites from scratch with modern tech stacks</li>
+        <li>Making the web more accessible to everyone</li>
+        <li>Collaborating with others</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Using preprocessors (Less)</li>
+        <li>JavaScript</li>
+        <li>Object Oriented Programming (Java)</li>
+        <li>React</li>
+      </ul>
+    </section>
+
+    <!-- Work history section -->
+    <section class="work-history">
+      <h2>Work History</h2>
+      <div class="work-titles">
+          <p>COMPANY</p>
+          <p>ROLE</p>
+          <p>DURATION</p>
+        </div>
+      <div class="work-container">
+        <p>Catalyte</p>
+        <p>Web Developer</p>
+        <p>9 months</p>
+      </div>
+    </section>
+
+    <!-- Education history section -->
+    <section class="education">
+        <h2>Education</h2>
+        <div class="ed-container">
+          <div class="school-info">
+              <h3>Charter College</h3>
+              <p>Certificate of Drafting</p>
+            </div>
+          <div class="school-info">
+            <h3>Clark College</h3>
+            <p>Associates in Science</p>
+          </div>
+          <div class="school-info">
+              <h3>Portland State University</h3>
+              <p>Bachelors of Mathmatics</p>
+              <p>In progress...</p>
+          </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>My email</p>
+      <p>My phone</p>
+    </footer>
+
+  </div>
 </body>
+
 </html>
